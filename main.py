@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+import requests
+import psycopg2
 
 app = FastAPI()
 
@@ -26,11 +28,6 @@ async def demo_post(inp: Msg):
 async def demo_get_path_id(path_id: int):
     return {"message": f"This is /path/{path_id} endpoint, use post request to retrieve result"}
 
-from fastapi import FastAPI
-import requests
-import psycopg2
-
-app = FastAPI()
 
 # define database connection parameters
 db_params = {
