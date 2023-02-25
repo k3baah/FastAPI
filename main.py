@@ -78,6 +78,3 @@ async def populate_database():
 
     return {"message": f"Inserted {len(job_postings)} job postings into database."}
 
-
-cursor = conn.cursor()
-
