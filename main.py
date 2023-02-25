@@ -31,10 +31,10 @@ async def demo_get_path_id(path_id: int):
 
 # define database connection parameters
 db_params = {
-    host="containers-us-west-96.railway.app",
-    database="railway",
-    user="postgres",
-    password="7Q694nOaUlDIPSqorW0M"
+    PGHOST="containers-us-west-96.railway.app",
+    PGDATABASE="railway",
+    PGUSER="postgres",
+    PGPASSWORD="7Q694nOaUlDIPSqorW0M"
 }
 
 # define SQL query to insert job posting into database
