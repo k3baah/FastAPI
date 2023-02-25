@@ -39,7 +39,7 @@ db_params = {
 
 # define SQL query to insert job posting into database
 insert_query = """
-    INSERT INTO job_postings (position, company, description, role, type, location, skill) 
+    INSERT INTO test (position, company, description, role, type, location, skill) 
     VALUES (%s, %s, %s, %s, %s, %s, %s)
 """
 
