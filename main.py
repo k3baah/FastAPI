@@ -35,7 +35,8 @@ async def populate_database():
     access_token = "934df2e5-0ccc-412f-9e37-5ec4518e4e89:f080c116-24c8-4967-8537-a6841418c7ee"
     headers = {"Authorization": f"Bearer {access_token}"}
     response = requests.get(api_url, headers=headers)
-    job_postings = response.json()["capturedLists"]["jobs"]
+    job_postings = response.json()["result"]["robotTasks"]["items"][0]["capturedLists"]["jobs"]
+
 
     # insert job postings into database
     cursor = conn.cursor()
